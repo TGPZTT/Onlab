@@ -17,10 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . -t onlab:onlab
 
-  run:
-    needs: build
-    runs-on: ubuntu-latest
 
-    steps:
-    - name: Futtatas
-      run: docker run onlab:onlab
