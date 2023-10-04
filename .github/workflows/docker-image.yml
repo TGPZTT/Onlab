@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . onlab:onlab
+      run: docker build . -t onlab:onlab
 
   run:
     runs-on: ubuntu-latest
